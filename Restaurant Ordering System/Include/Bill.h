@@ -5,19 +5,20 @@
 #include <ctime>
 #include <thread> 
 #include <chrono> 
-using namespace std;
 
-void wait_for(unsigned int second) {
-   this_thread::sleep_for(chrono::seconds(second));
+inline void wait_for(unsigned int second) {
+   std::this_thread::sleep_for(std::chrono::seconds(second));
 }
 
-void print_Date() {
-   time_t now = time(0);
-   tm* date = localtime(&now);
-   cout << "Date: " << date->tm_mday << "/" << date->tm_mon + 1 << "/" << date->tm_year << endl;
+inline void print_Date() {
+   std::time_t now = std::time(0);
+   std::tm* date = std::localtime(&now);
+
+   std::cout << "Date: " << date->tm_mday << "/" << date->tm_mon + 1 << "/" << date->tm_year + 1900 << std::endl;
 }
 
-void Log(string prompt) {
-   cout << prompt << endl;
+inline void Log(std::string prompt) {
+   std::cout << prompt << std::endl;
 }
+
 #endif
