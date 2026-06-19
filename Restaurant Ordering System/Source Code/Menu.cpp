@@ -17,36 +17,37 @@ Menu::Menu(){
     menuList.push_back({5,"Beer: ",3.00,12000,"Drink"});
 }
 
-    void Menu::displayMenu(){
-        std::cout<<"\n========== Food ==========\n";
-            for(auto item:menuList){
-                if(item.category == "Food"){
-                    std::cout<<item.id
-                             <<","
-                             <<item.name
-                             <<":$"
-                             << std::fixed << std::setprecision(2)
-                             << item.usdPrice
-                             << " = "
-                             << item.khPrice
-                             << ":៛";
-                }
-            }
-        std::cout<<"\n========== Drink ==========\n";
-            for(auto item:menuList){
-                if(item.category == "Drink"){
-                    std::cout<<item.id
-                             <<","
-                             <<item.name
-                             <<":$"
-                             <<std::fixed << std::setprecision(2)
-                             <<item.usdPrice
-                             <<" = "
-                             <<item.khPrice
-                             <<":៛";
-                }
+void Menu::displayMenu(){
+    std::cout<<"\n========== Food ==========\n";
+        for(auto item:menuList){
+            if(item.category == "Food"){
+                std::cout<<item.id
+                            <<","
+                            <<item.name
+                            <<":$"
+                            << std::fixed << std::setprecision(2)
+                            << item.usdPrice
+                            << " = "
+                            << item.khPrice
+                            << ":៛";
             }
         }
+    std::cout<<"\n========== Drink ==========\n";
+        for(auto item:menuList){
+            if(item.category == "Drink"){
+                std::cout<<item.id
+                            <<","
+                            <<item.name
+                            <<":$"
+                            <<std::fixed << std::setprecision(2)
+                            <<item.usdPrice
+                            <<" = "
+                            <<item.khPrice
+                            <<":៛";
+            }
+        }
+}
+
 MenuItem* Menu::finditem(int id, std::string category){
     for(auto & item:menuList){
         if(item.id == id && item.category == category){

@@ -2,19 +2,20 @@
 #define BILL_H
 
 #include <iostream>
-#include <ctime>
-#include <thread> 
+#include <thread>
+#include <format>
 #include <chrono> 
+#include <string>
 
 inline void wait_for(unsigned int second) {
    std::this_thread::sleep_for(std::chrono::seconds(second));
 }
 
 inline void print_Date() {
-   std::time_t now = std::time(0);
-   std::tm* date = std::localtime(&now);
-
-   std::cout << "Date: " << date->tm_mday << "/" << date->tm_mon + 1 << "/" << date->tm_year + 1900 << std::endl;
+   auto now = std::chrono::system_clock::now();
+   auto local_now = std::chrono::current_zone()->to_local(now);
+   std::string formatted = std::format("{:%Y-%m-%d %H:%M:%S}", std::chrono::floor<std::chrono::seconds>(local_now));
+   std::cout << "Current Datetime: " << formatted << std::endl;
 }
 
 inline void Log(std::string prompt) {
