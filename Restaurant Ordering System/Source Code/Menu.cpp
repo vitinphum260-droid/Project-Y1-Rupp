@@ -1,8 +1,13 @@
 #include"../Header/Menu.h"
-
+#ifdef _WIN32
+#include <windows.h>
+#endif
 
 Menu::Menu(){
-
+#ifdef _WIN32
+   SetConsoleOutputCP(CP_UTF8);
+   SetConsoleCP(CP_UTF8);
+#endif
     //Food
     menuList.push_back({1,"Fried Rice: ",2.50,10000,"Food"});
     menuList.push_back({2,"Chicken Noodle Soup: ",2,8000,"Food"});
@@ -30,7 +35,7 @@ void Menu::displayMenu(){
                             << item.usdPrice
                             << " = "
                             << item.khPrice
-                            << ":៛";
+                            << ": \u17DB";
             }
         }
     std::cout<<"\n========== Drink ==========\n";
@@ -44,7 +49,7 @@ void Menu::displayMenu(){
                             <<item.usdPrice
                             <<" = "
                             <<item.khPrice
-                            <<":៛";
+                            <<": \u17DB";
             }
         }
 }

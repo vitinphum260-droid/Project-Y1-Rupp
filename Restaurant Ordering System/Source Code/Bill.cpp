@@ -1,9 +1,16 @@
 #include <iostream>
 #include "../Header/Bill.h"
-using namespace std;
+#ifdef _WIN32
+#include <windows.h>
+#endif
 
 int main() {
-   vector<MenuItem> menuList;
+#ifdef _WIN32
+   SetConsoleOutputCP(CP_UTF8);
+   SetConsoleCP(CP_UTF8);
+#endif
+
+   std::vector<MenuItem> menuList;
    menuList.push_back({1,"Fried Rice: ",2.50,10000,"Food"});
    menuList.push_back({2,"Chicken Noodle Soup: ",2,8000,"Food"});
    menuList.push_back({3,"Beef Lok Lak Rice: ",3.25,13000,"Food"});

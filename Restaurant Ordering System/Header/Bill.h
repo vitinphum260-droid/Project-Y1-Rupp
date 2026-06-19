@@ -37,7 +37,19 @@ class Bill {
       void display_item(std::vector<MenuItem>& menu) {
          int i = 1;
          for (const auto& item : menu) {
-            std::cout << i << ". " << std::left << std::setw(30) << item.name << "$ " << std::left << std::setw(4) << std::setprecision(2) << item.usdPrice << " : r" << item.khPrice << std::endl;
+            std::cout << i 
+                      << ". " 
+                      << std::left   
+                      << std::setw(30)  
+                      << item.name 
+                      << "$ " 
+                      << std::left 
+                      << std::setw(4) 
+                      << std::setprecision(2) 
+                      << item.usdPrice 
+                      << " : \u17DB" 
+                      << item.khPrice 
+                      << std::endl;
             i++;
          }
       }
@@ -60,7 +72,17 @@ class Bill {
       void total_price_output() {
          unsigned long total_kh = total_kh_price(foods) + total_kh_price(drinks);
          double total_usd = total_usd_price(foods) + total_usd_price(drinks);
-         std::cout << "  " << std::left << std::setw(30) << "Total:" << "$ " << std::left << std::setw(4) << std::setprecision(2) << total_usd << " : r" << total_kh << std::endl;
+         std::cout << "  " 
+                   << std::left 
+                   << std::setw(30) 
+                   << "Total:" 
+                   << "$ " 
+                   << std::left 
+                   << std::setw(4) 
+                   << std::setprecision(2) 
+                   << total_usd 
+                   << " : \u17DB" 
+                   << total_kh << std::endl;
       }
    public: 
    Bill(std::vector<MenuItem>& fnd) {

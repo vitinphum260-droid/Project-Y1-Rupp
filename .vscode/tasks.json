@@ -2,20 +2,12 @@
     "tasks": [
         {
             "type": "cppbuild",
-<<<<<<< HEAD
             "label": "C/C++: g++.exe build active file",
             "command": "C:\\msys64\\ucrt64\\bin\\g++.exe",
-=======
-<<<<<<< HEAD
-            "label": "C/C++: g++.exe build active file",
-            "command": "C:\\msys64\\ucrt64\\bin\\g++.exe",
-=======
-            "label": "C/C++: gcc.exe build active file",
-            "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe",
->>>>>>> ca9f9641bcf1d2512288ce87601aa242b8a87f0e
->>>>>>> 670cd37c61d5bc0469ad33b7f9121c47b25a1675
             "args": [
                 "-fdiagnostics-color=always",
+                "-finput-charset=UTF-8",
+                "-fexec-charset=UTF-8",
                 "-g",
                 "${file}",
                 "-o",
