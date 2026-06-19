@@ -2,7 +2,7 @@
 1,Fried Rice: 2.50$=10000៛
 2,Chicken Noodle Soup: 2.00$=8000៛
 3,Beef Lok Lak Rice: 3.25$=13000៛
-4,Grilled Pork Rice,2.50$=1000
+4,Grilled Pork Rice,2.50$=10000
 5,Khmer Curry,2.75$=11000៛
 
 ====== Drink ========
