@@ -1,18 +1,11 @@
-#ifndef MENUITEM_H
-#define MENUITEM_H
+#ifndef MENU_H
+#define MENU_H
 
 #include<iostream>
 #include<iomanip>
 #include<list>
 #include<string>
-
-struct MenuItem{
-    int id;
-    std::string name;
-    double usdPrice;
-    int khPrice;
-    std::string category;
-};
+#include "MenuItem.h"
 class Menu{
 
     private:

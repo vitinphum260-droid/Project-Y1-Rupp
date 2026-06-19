@@ -24,6 +24,33 @@
                 "isDefault": true
             },
             "detail": "Build the active C++ file with MSYS2 UCRT64 g++."
+        },
+        {
+            "type": "cppbuild",
+            "label": "C/C++: Build Restaurant System",
+            "command": "C:\\msys64\\ucrt64\\bin\\g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-finput-charset=UTF-8",
+                "-fexec-charset=UTF-8",
+                "-g",
+                "Main.cpp",
+                "Source Code/System.cpp",
+                "Source Code/Menu.cpp",
+                "Source Code/Bill.cpp",
+                "-o",
+                "Main.exe"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/Restaurant Ordering System"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build"
+            },
+            "detail": "Build all Restaurant System files with MSYS2 UCRT64 g++."
         }
     ],
     "version": "2.0.0"

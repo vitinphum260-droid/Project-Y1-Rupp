@@ -7,14 +7,7 @@
 #include <iomanip>
 #include <sstream>
 #include <ctime>
-
-struct MenuItem{
-   int id;
-   std::string name;
-   double usdPrice;
-   int khPrice;
-   std::string category;
-};
+#include "MenuItem.h"
 
 class Bill {
    private: 
@@ -85,6 +78,8 @@ class Bill {
                    << total_kh << std::endl;
       }
    public: 
+   Bill() {}
+
    Bill(std::vector<MenuItem>& fnd) {
       for (const auto& item : fnd) {
          if (item.category == "Food") {
@@ -95,15 +90,39 @@ class Bill {
          }
       }
    }
-      void get_bill() {
-         std::cout << "Bill : " << get_date() << std::endl;
-         std::cout << "======================> Foods <=======================" << std::endl;
-         display_item(foods); 
-         std::cout << "======================> Drinks <======================" << std::endl;
-         display_item(drinks);
-         std::cout << "======================> Total <=======================" << std::endl;
-         total_price_output();
+   void addOrder(const MenuItem& item) {
+      if (item.category == "Food") {
+         apply_food_and_drink(foods, item);
+      } else if (item.category == "Drink") {
+         apply_food_and_drink(drinks, item);
       }
+   }
+
+   void cancelLastOrder() {
+      if (!foods.empty()) {
+         foods.pop_back();
+         std::cout << "Last food order cancelled.\n";
+      } else if (!drinks.empty()) {
+         drinks.pop_back();
+         std::cout << "Last drink order cancelled.\n";
+      } else {
+         std::cout << "No orders to cancel.\n";
+      }
+   }
+
+   void showBill() {
+      get_bill();
+   }
+
+   void get_bill() {
+      std::cout << "Bill : " << get_date() << std::endl;
+      std::cout << "======================> Foods <=======================" << std::endl;
+      display_item(foods); 
+      std::cout << "======================> Drinks <======================" << std::endl;
+      display_item(drinks);
+      std::cout << "======================> Total <=======================" << std::endl;
+      total_price_output();
+   }
 
 };
 

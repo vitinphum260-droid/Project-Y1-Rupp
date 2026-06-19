@@ -1,5 +1,6 @@
 #include <iostream>
 #include "../Header/Bill.h"
+#include "../Header/System.h"
 #ifdef _WIN32
 #include <windows.h>
 #endif
@@ -23,8 +24,11 @@ int main() {
    menuList.push_back({3,"Fresh Orange Juice: ",1.75,7000,"Drink"});
    menuList.push_back({4,"Hot tea: ",1.25,5000,"Drink"});
    menuList.push_back({5,"Beer: ",3.00,12000,"Drink"});
-
+   
    Bill myBill(menuList);
    myBill.get_bill();
+
+   System restaurant;
+   restaurant.run();
    return 0;
 }
