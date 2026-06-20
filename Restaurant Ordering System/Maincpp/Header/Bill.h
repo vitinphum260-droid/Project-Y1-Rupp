@@ -9,7 +9,7 @@
 #include <ctime>
 #include "MenuItem.h"
 
-class Bill {
+class Bill { 
    private: 
       std::vector<MenuItem> drinks;
       std::vector<MenuItem> foods;
@@ -28,6 +28,7 @@ class Bill {
       }
 
       void display_item(std::vector<MenuItem>& menu) {
+         if (menu.empty()) std::cout << "                  ----- None -----" << std::endl;
          int i = 1;
          for (const auto& item : menu) {
             std::cout << i 

@@ -35,7 +35,8 @@ void Menu::displayMenu(){
                             << item.usdPrice
                             << " = "
                             << item.khPrice
-                            << ": \u17DB";
+                            << ": \u17DB"
+                            << std::endl;
             }
         }
     std::cout<<"\n========== Drink ==========\n";
@@ -49,7 +50,8 @@ void Menu::displayMenu(){
                             <<item.usdPrice
                             <<" = "
                             <<item.khPrice
-                            <<": \u17DB";
+                            <<"\u17DB"
+                            <<std::endl;
             }
         }
 }
