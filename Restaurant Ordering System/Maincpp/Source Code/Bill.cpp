@@ -25,8 +25,8 @@ int main() {
    menuList.push_back({4,"Hot tea: ",1.25,5000,"Drink"});
    menuList.push_back({5,"Beer: ",3.00,12000,"Drink"});
    
-   Bill myBill(menuList);
-   myBill.get_bill();
+   // Bill myBill(menuList);
+   // myBill.get_bill();
 
    System restaurant;
    restaurant.run();
