@@ -7,7 +7,7 @@
 //     customer.push(name);
 //     std::cout <<"Customer added."<<std::endl;
 // }
-// void System::addtakeOrder(){
+// void System::addTakeOrder(){
 //     if(customer.empty()){
 //         std::cout <<"No Customer Waiting."<<std::endl;
 //         return;
@@ -89,7 +89,7 @@
 //             break;
 
 //         case 3:
-//             addtakeOrder();
+//             addTakeOrder();
 //             break;
 
 //         case 4:

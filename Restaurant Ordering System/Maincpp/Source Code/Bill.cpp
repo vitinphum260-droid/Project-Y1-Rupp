@@ -20,7 +20,7 @@ int main() {
 
    //Drink
    menuList.push_back({1,"Pepsi: ",1,4000,"Drink"});
-   menuList.push_back({2,"Cocacola: ",1.25,5000,"Drink"});
+   menuList.push_back({2,"Coca-Cola: ",1.25,5000,"Drink"});
    menuList.push_back({3,"Fresh Orange Juice: ",1.75,7000,"Drink"});
    menuList.push_back({4,"Hot tea: ",1.25,5000,"Drink"});
    menuList.push_back({5,"Beer: ",3.00,12000,"Drink"});

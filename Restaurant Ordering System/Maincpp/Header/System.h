@@ -15,7 +15,7 @@ class System{
     customer.push(name);
     std::cout <<"Customer added."<<std::endl;
     }
-    void addtakeOrder(){
+    void addTakeOrder(){
         if(customer.empty()){
             std::cout <<"No Customer Waiting."<<std::endl;
             return;
@@ -97,7 +97,7 @@ class System{
                 break;
 
             case 3:
-                addtakeOrder();
+                addTakeOrder();
                 break;
 
             case 4:
