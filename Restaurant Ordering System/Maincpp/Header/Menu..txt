@@ -1,0 +1,13 @@
+====== Food ========
+1,Fried Rice: 2.50$=10000៛
+2,Chicken Noodle Soup: 2.00$=8000៛
+3,Beef Lok Lak Rice: 3.25$=13000៛
+4,Grilled Pork Rice,2.50$=10000
+5,Khmer Curry,2.75$=11000៛
+
+====== Drink ========
+1,Pepsi,1$=4000៛
+2,Cocacola,1.25$=5000៛
+3,Fresh Orange Juice,1.75$=7000៛
+4,Hot tea,1.25$=5000៛
+5,Beer,3.00$=12000៛
