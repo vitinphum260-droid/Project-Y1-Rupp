@@ -35,14 +35,14 @@
                 "-fexec-charset=UTF-8",
                 "-g",
                 "Main.cpp",
-                "Source Code/System.cpp",
-                "Source Code/Menu.cpp",
-                "Source Code/Bill.cpp",
+                "Maincpp/Source Code/System.cpp",
+                "Maincpp/Source Code/Menu.cpp",
+                "Maincpp/Source Code/Bill.cpp",
                 "-o",
                 "Main.exe"
             ],
             "options": {
-                "cwd": "${workspaceFolder}/Restaurant Ordering System"
+                "cwd": "${workspaceFolder}/Project-Y1-Rupp/Restaurant Ordering System"
             },
             "problemMatcher": [
                 "$gcc"
