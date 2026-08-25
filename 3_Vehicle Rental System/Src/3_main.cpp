@@ -1,8 +1,6 @@
 #include <iostream>
 #include "../Include/3_rentalSystem.h"
 
-using namespace std;
-
 int main()
 {
     Rental rentalSystem;
@@ -10,19 +8,19 @@ int main()
 
     do
     {
-        cout << "\n=========================================\n";
-        cout << "      VEHICLE RENTAL SYSTEM\n";
-        cout << "=========================================\n";
-        cout << "1. Add Vehicle\n";
-        cout << "2. Show All Vehicles\n";
-        cout << "3. Add Customer\n";
-        cout << "4. Rent Vehicle\n";
-        cout << "5. Return Vehicle\n";
-        cout << "6. Print Rental Bill\n";
-        cout << "0. Exit\n";
-        cout << "=========================================\n";
-        cout << "Enter your choice: ";
-        cin >> choice;
+        std::cout << "\n=========================================\n";
+        std::cout << "      VEHICLE RENTAL SYSTEM\n";
+        std::cout << "=========================================\n";
+        std::cout << "1. Add Vehicle\n";
+        std::cout << "2. Show All Vehicles\n";
+        std::cout << "3. Add Customer\n";
+        std::cout << "4. Rent Vehicle\n";
+        std::cout << "5. Return Vehicle\n";
+        std::cout << "6. Print Rental Bill\n";
+        std::cout << "0. Exit\n";
+        std::cout << "=========================================\n";
+        std::cout << "Enter your choice: ";
+        std::cin >> choice;
 
         switch (choice)
         {
@@ -51,11 +49,11 @@ int main()
             break;
 
         case 0:
-            cout << "\nThank you for using the Vehicle Rental System!\n";
+            std::cout << "\nThank you for using the Vehicle Rental System!\n";
             break;
 
         default:
-            cout << "\nInvalid choice! Please try again.\n";
+            std::cout << "\nInvalid choice! Please try again.\n";
         }
 
     } while (choice != 0);
