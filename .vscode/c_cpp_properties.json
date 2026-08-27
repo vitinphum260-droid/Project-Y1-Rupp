@@ -4,7 +4,7 @@
             "name": "Win32",
             "includePath": [
                 "${workspaceFolder}/**",
-                "${workspaceFolder}/Restaurant Ordering System/Header"
+                "${workspaceFolder}/Project-Y1-Rupp/Restaurant Ordering System/Maincpp/Header"
             ],
             "defines": [
                 "_DEBUG",
@@ -13,6 +13,7 @@
             ],
             "cStandard": "c17",
             "cppStandard": "c++20",
+            "compilerPath": "C:/msys64/ucrt64/bin/g++.exe",
             "intelliSenseMode": "windows-gcc-x64"
         }
     ],
