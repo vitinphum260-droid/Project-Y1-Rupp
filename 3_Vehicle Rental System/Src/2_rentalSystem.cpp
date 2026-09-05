@@ -17,7 +17,6 @@ void Rental::Add_Customer() {
    customers.push_back(cus);
    cout << "New Customer Added." << endl;
 }
-
 void Rental::Display_Customer() const {
    cout << "=====> Customer Lists <=====" << endl;
    for (const auto& cus : customers) {
@@ -61,7 +60,6 @@ void Rental::rentVehicle() {
     }
     std::cout << "Vehicle ID not found.\n";
 }
-
 void Rental::returnVehicle() {
     int vID;
     std::cout << "\nEnter Vehicle ID to return: ";
@@ -79,8 +77,4 @@ void Rental::returnVehicle() {
         }
     }
     std::cout << "Vehicle ID not found.\n";
-}
-
-int main() {
-   return 0;
 }

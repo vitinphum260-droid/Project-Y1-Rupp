@@ -16,7 +16,6 @@ int main()
         std::cout << "3. Add Customer\n";
         std::cout << "4. Rent Vehicle\n";
         std::cout << "5. Return Vehicle\n";
-        std::cout << "6. Print Rental Bill\n";
         std::cout << "0. Exit\n";
         std::cout << "=========================================\n";
         std::cout << "Enter your choice: ";
@@ -24,28 +23,24 @@ int main()
 
         switch (choice)
         {
-        // case 1:
-        //     rentalSystem.addVehicle();
-        //     break;
+        case 1:
+            rentalSystem.addVehicle();
+            break;
 
-        // case 2:
-        //     rentalSystem.showVehicles();
-        //     break;
+        case 2:
+            rentalSystem.showVehicles();
+            break;
 
-        // case 3:
-        //     rentalSystem.Add_Customer();
-        //     break;
+        case 3:
+            rentalSystem.Add_Customer();
+            break;
 
-        // case 4:
-        //     rentalSystem.rentVehicle();
-        //     break;
+        case 4:
+            rentalSystem.rentVehicle();
+            break;
 
-        // case 5:
-        //     rentalSystem.returnVehicle();
-        //     break;
-
-        // case 6:
-        //     rentalSystem.printBill();
+        case 5:
+            rentalSystem.returnVehicle();
             break;
 
         case 0:

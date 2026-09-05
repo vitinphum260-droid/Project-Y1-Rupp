@@ -15,10 +15,10 @@ class Rental {
       void Add_Customer();
       void Display_Customer() const;
 
-      void Add_Vehicle();
-      void Display_Vehicle() const;
+      void addVehicle();
+      void showVehicles() const;
 
-      void Rent_Vehicle();
-      void Return_Vehicle(); 
+      void rentVehicle();
+      void returnVehicle();
 };
 #endif // !RENTALSYSTEM_H
